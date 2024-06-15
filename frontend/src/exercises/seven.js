@@ -1,0 +1,3 @@
+const seven = [];
+
+export { seven };

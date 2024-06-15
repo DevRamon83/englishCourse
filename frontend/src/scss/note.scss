@@ -1,0 +1,25 @@
+#noteContainer {
+  background-color: $note;
+  margin-top: 0;
+  width: 90%;
+  height: 100%;
+  padding: 5vh 5%;
+  line-height: 40px;
+  position: absolute;
+  right: 0;
+  animation: slideFromRight 0.7s forwards;
+  font-size: 18px;
+  font-weight: b;
+
+  @include sm {
+    position: fixed;
+    height: 44vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 24vh;
+    top: 11vh;
+    background-color: $darkNote;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}

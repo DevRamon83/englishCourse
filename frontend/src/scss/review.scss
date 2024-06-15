@@ -1,0 +1,138 @@
+.review__wrong {
+  height: 5vh;
+  border: $border;
+  background-color: white;
+  border-radius: 5px;
+  margin: 20px;
+  width: fit-content;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: $shadow;
+  border-color: red;
+}
+
+.review__correct {
+  @extend .review__wrong;
+  border-color: lime;
+  margin: 0 0 0 40px;
+}
+
+.review__leftPanel {
+  height: 60% !important;
+  width: 70% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex-direction: column !important;
+  text-align: center;
+  padding-bottom: 0 !important;
+
+  @include sm {
+    width: 100% !important;
+    height: 40vh !important;
+    top: 13vh !important;
+  }
+}
+
+.review__leftPanel > p > img {
+  border: $border;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+
+  @include sm {
+    width: 55% !important;
+    height: auto !important;
+  }
+}
+
+.review__leftPanel > p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.review__endTab {
+  display: flex;
+  width: 67%;
+  margin-left: -200%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: $border;
+  margin-bottom: 45px;
+  border-radius: 15px;
+  background-color: $light;
+  box-shadow: $shadow;
+  cursor: pointer;
+  animation: recommendedSlide 0.75s forwards;
+  color: $author;
+  transition: color 0.5s, transform 0.25s ease-in-out;
+}
+
+#review__restart {
+  height: 30px;
+  padding: 5px;
+  border: $border;
+  background-color: $bodyColor;
+  border-radius: 50%;
+  box-shadow: $shadow;
+  cursor: pointer;
+  transition: background-color 0.5s, transform 0.25s ease-in-out;
+
+  @include sm {
+    height: 20px;
+  }
+}
+
+#review__restart:hover {
+  transform: scale(1.1);
+  background-color: $light;
+}
+
+#review__close {
+  @extend #review__restart;
+}
+
+#review__text {
+  background-color: $note;
+  position: absolute;
+  left: 0;
+  top: 3vh;
+  width: 75%;
+  height: 28vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: slideFromLeft 0.75s forwards;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 0 10px 10px 0;
+  box-shadow: $shadow;
+  border: $border;
+  border-left: 0;
+
+  @include sm {
+    width: 100%;
+    border-radius: 0;
+    font-size: 13px;
+    position: absolute;
+    top: -3vh;
+    height: 100%;
+  }
+}
+
+#review__imgConsole {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

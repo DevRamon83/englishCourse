@@ -1,0 +1,83 @@
+.menu__right {
+  background-color: $light;
+  color: $author;
+  font-size: 15px;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 5px 15px;
+  border: $border;
+  border-radius: 0 15px 15px 0;
+  border-left: 0;
+  box-shadow: $shadow;
+  scale: 1;
+  transition: transform 0.25s ease-in-out;
+  cursor: pointer;
+
+  @include sm {
+    height: 5vh;
+    padding: 0 8px;
+    display: flex;
+    border-left: $border;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+}
+
+#recommended {
+  border-top: 0;
+  position: absolute;
+  top: 0;
+  left: -200%;
+  animation: slideFromLeft 1s forwards;
+
+  @include sm {
+    position: initial;
+    border-top: $border;
+  }
+}
+
+#vocabulary {
+  position: absolute;
+  top: 9vh;
+  left: -200%;
+  animation: slideFromLeft 1s forwards;
+  animation-delay: 0.1s;
+
+  @include sm {
+    position: initial;
+  }
+}
+
+#note {
+  position: absolute;
+  top: 18vh;
+  left: -200%;
+  animation: slideFromLeft 1s forwards;
+  animation-delay: 0.2s;
+
+  @include sm {
+    position: initial;
+  }
+}
+
+#practice {
+  position: absolute;
+  top: 27vh;
+  left: -200%;
+  animation: slideFromLeft 1s forwards;
+  animation-delay: 0.3s;
+
+  @include sm {
+    position: initial;
+  }
+}
+
+.active {
+  background-color: $active;
+  font-weight: bold;
+  color: $light;
+  transition: background-color 0.5s, transform 0.5s ease-in-out;
+  transform: scale(1.05);
+}

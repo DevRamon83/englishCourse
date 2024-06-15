@@ -1,0 +1,163 @@
+#layout__container {
+  position: fixed;
+  overflow: hidden;
+  left: 5%;
+  top: 5vh;
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  border: $border;
+  border-radius: 5px;
+  box-shadow: $shadow;
+
+  @include sm {
+    position: initial;
+    overflow: auto;
+    width: 100%;
+    height: fit-content;
+    display: block;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+#layout__leftPanel {
+  position: relative;
+  background-color: $leftPanelColor;
+  width: 50%;
+  height: 90vh;
+  overflow: hidden;
+
+  @include sm {
+    position: initial;
+    width: 100%;
+    height: fit-content;
+    overflow: visible;
+    border-right: 0;
+  }
+}
+
+#layout__rightPanel {
+  width: 50%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  top: 0vh;
+  background-color: $ghost;
+
+  @include sm {
+    width: 100%;
+    height: fit-content;
+    display: block;
+    overflow: hidden;
+    position: initial;
+    padding-bottom: 15vh;
+  }
+}
+
+#layout__rightContainer {
+  background-color: $rightPanelColor;
+  position: absolute;
+  border-top: $border;
+  border-left: $border;
+  top: 36vh;
+  bottom: 12vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+
+  @include sm {
+    position: initial;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+  }
+}
+
+#layout__topRightConsole {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 36vh;
+  border-left: $border;
+
+  @include sm {
+    position: fixed;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 76vh;
+    background-color: $bodyColor;
+    border-top: $border;
+    border-left: 0;
+  }
+}
+
+#layout__leftConsole {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 12vh;
+  background-color: $leftConsoleColor;
+  border-bottom: $border;
+  box-shadow: $shadow;
+  animation: slideFromRight 0.8s forwards ease-in-out;
+  animation-delay: 0.2s;
+  z-index: 10;
+
+  @include sm {
+    position: fixed;
+    top: 0vh;
+  }
+}
+
+#layout__leftContainer {
+  position: absolute;
+  top: 12vh;
+  right: 0;
+  width: 100%;
+  height: 75vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: $light;
+  padding: 15px 50px 0 30px;
+  font-size: 18px;
+  line-height: 30px;
+
+  @include sm {
+    width: 100%;
+    display: block;
+    position: initial;
+    height: fit-content;
+    margin-top: 10vh;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 20px;
+  }
+}
+
+#layout__rightConsole {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 12vh;
+  background-color: $light;
+  box-shadow: $shadow;
+  animation: slideFromLeft 0.8s forwards ease-in-out;
+  animation-delay: 0.2s;
+  z-index: 0;
+  border-top: $border;
+  border-radius: 0 0 5px 0;
+  overflow: hidden;
+
+  @include sm {
+    position: fixed;
+    height: 12vh;
+    z-index: 10;
+  }
+}

@@ -1,0 +1,128 @@
+#vocabularyContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0vh;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  animation: slideFromRight 0.7s forwards;
+
+  @include sm {
+    position: fixed;
+    border-left: 0;
+    top: 12vh;
+    height: 76vh;
+  }
+}
+
+#tabContainer {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 1;
+
+  @include sm {
+    position: absolute;
+    bottom: 11vh;
+    overflow: hidden;
+    animation: grow 0.5s forwards;
+    font-size: 11px;
+    font-weight: bold;
+  }
+}
+
+#contentContainer {
+  width: 100%;
+  height: 100%;
+  background-color: $vocabulary;
+  border-right: 0;
+}
+
+.vocabularyTitle {
+  animation: vocabularyTabs 0.5s forwards;
+  padding: 0 15px;
+  width: fit-content;
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: $border;
+  border-top: 0;
+  margin-right: 20px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: $shadow;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+
+  @include sm {
+    border-radius: 5px 5px 0 0;
+    border-bottom: 0;
+    border-top: $border;
+  }
+}
+
+.activeTab {
+  background-color: $active;
+  color: $light;
+}
+
+.vocabularyTab {
+  background-color: $light;
+  color: $rightPanelColor;
+}
+
+.wordsContainer {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-top: 2vh;
+  padding-left: 5%;
+}
+
+.wordIta {
+  padding: 0 15px;
+  background-color: $rightPanelColor;
+  color: $light;
+  border: $border;
+  border-radius: 5px;
+  width: fit-content;
+  height: 4vh;
+  margin: 20px;
+  box-shadow: $shadow;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  cursor: pointer;
+  transition: transform 0.25s ease-in-out;
+
+  @include sm {
+    font-size: 11px;
+  }
+}
+
+.wordEng {
+  @extend .wordIta;
+  background-color: $light;
+  color: $rightPanelColor;
+}
+
+.activeContent {
+  width: 100%;
+  height: 38vh;
+  animation: fallDownVocabulary 0.75s forwards;
+
+  @include sm {
+    height: 55vh;
+  }
+}
+
+.hideContent {
+  display: none;
+}

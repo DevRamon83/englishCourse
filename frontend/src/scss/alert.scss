@@ -1,0 +1,36 @@
+#alert__panel {
+  height: 100%;
+  width: 100%;
+  background-color: $light;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: red;
+  font-size: 32px;
+  text-transform: uppercase;
+
+  @include sm {
+    border-top: $border;
+    font-size: 18px;
+  }
+}
+
+.alert__panelOpen {
+  position: absolute;
+  top: 0;
+  animation: slideFromRight 0.5s forwards;
+}
+
+.alert__panelClose {
+  position: absolute;
+  top: 0;
+  animation: backToTheRight 0.5s ease-in forwards;
+}
+
+#alert__close {
+  height: 6vh;
+  width: auto;
+  background-color: $bodyColor;
+  border-radius: 50%;
+  cursor: pointer;
+}

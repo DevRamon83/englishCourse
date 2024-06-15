@@ -1,0 +1,3 @@
+const six = [];
+
+export { six };

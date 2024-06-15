@@ -1,0 +1,3 @@
+const five = [];
+
+export { five };
