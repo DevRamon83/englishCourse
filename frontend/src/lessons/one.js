@@ -45,9 +45,9 @@ const one = [
   },
   {
     type: `recommended`,
-    title: [`'THE' in Inglese. QUANDO si usa?`, "prova"],
-    author: [`JoEnglish`, "salcazzo"],
-    link: [`https://www.youtube.com/watch?v=-f6WCsBLo8E`, "http://google.com"],
+    title: [`'THE' in Inglese. QUANDO si usa?`],
+    author: [`JoEnglish`],
+    link: [`https://www.youtube.com/watch?v=-f6WCsBLo8E`],
   },
   {
     type: `vocabulary`,
