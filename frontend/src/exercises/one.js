@@ -20,7 +20,6 @@ const one = [
     options: ["ES", "S", "IES", "YES", "VES"],
     answer: 0,
   },
-  /*
   {
     type: "input",
     question: "Qual è l'articolo determinativo in inglese?",
@@ -184,7 +183,7 @@ const one = [
     ita: "foglia",
     placeholder: ["singolare", "plurale"],
     answer: ["leaf", "leaves"],
-  }, */
+  },
 ];
 
 export { one };
