@@ -2,31 +2,31 @@ const two = [
   {
     type: "input",
     question: "Il pronome personale IO in inglese?",
-    answer: "I",
+    answer: "i",
     placeholder: "risposta",
   },
   {
     type: "input",
     question: "Il pronome personale TU in inglese?",
-    answer: "You",
+    answer: "you",
     placeholder: "risposta",
   },
   {
     type: "input",
     question: "Il pronome personale LUI in inglese?",
-    answer: "He",
+    answer: "he",
     placeholder: "risposta",
   },
   {
     type: "input",
     question: "Il pronome personale LEI in inglese?",
-    answer: "She",
+    answer: "she",
     placeholder: "risposta",
   },
   {
     type: "input",
     question: "Il pronome personale ESSO in inglese?",
-    answer: "It",
+    answer: "it",
     placeholder: "risposta",
   },
   {
@@ -38,13 +38,13 @@ const two = [
   {
     type: "input",
     question: "Il pronome personale VOI in inglese?",
-    answer: "You",
+    answer: "you",
     placeholder: "risposta",
   },
   {
     type: "input",
     question: "Il pronome personale LORO in inglese?",
-    answer: "They",
+    answer: "they",
     placeholder: "risposta",
   },
   {
