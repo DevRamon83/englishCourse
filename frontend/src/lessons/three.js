@@ -53,7 +53,7 @@ const three = [
   },
   {
     type: `note`,
-    text: `Il nostro amico JoEnglish ci ha regalato un video in cui spiega per bene l'uso della congiunzione altough; ricordati sempre che Joe parla con accento britannico, per cui ricordati che se vuoi seguire il corso con la pronuncia americana non devi considerare l'accento che Joe usa nei suoi video.`,
+    text: `Il nostro amico JoEnglish ci ha regalato un video in cui spiega per bene l'uso della congiunzione although; ricordati sempre che Joe parla con accento britannico, per cui ricordati che se vuoi seguire il corso con la pronuncia americana non devi considerare l'accento che Joe usa nei suoi video.`,
   },
 ];
 
