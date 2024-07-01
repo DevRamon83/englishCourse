@@ -67,14 +67,14 @@ const one = [
   {
     type: "input",
     question:
-      "Che articolo indeterminativo si usa per le prima delle parole che iniziano con una consonante?",
+      "Che articolo indeterminativo si usa prima delle parole che iniziano con una consonante?",
     answer: "a",
     placeholder: "risposta",
   },
   {
     type: "input",
     question:
-      "Che articolo indeterminativo si usa per le prima delle parole che iniziano con un suono vocalico?",
+      "Che articolo indeterminativo si usa prima delle parole che iniziano con un suono vocalico?",
     answer: "an",
     placeholder: "risposta",
   },
