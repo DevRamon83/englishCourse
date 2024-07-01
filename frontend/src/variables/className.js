@@ -1,4 +1,5 @@
 const paragraphContainerClass = "paragraphContainer";
+const imgContainerClass = "imgContainer";
 const rightMenuClass = "menu__right";
 const titleOnClass = "activeTab";
 const wordsOnClass = "activeContent";
@@ -66,4 +67,5 @@ export {
   practiceLeftReviewRowClass,
   practiceInputRadioClass,
   practiceInputTextClass,
+  imgContainerClass,
 };
