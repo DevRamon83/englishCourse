@@ -32,7 +32,7 @@ const two = [
   {
     type: "input",
     question: "Il pronome personale NOI in inglese?",
-    answer: "We",
+    answer: "we",
     placeholder: "risposta",
   },
   {
